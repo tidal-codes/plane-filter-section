@@ -11,6 +11,7 @@ interface FilterStoreType {
     setSectionOpen: (value: boolean) => void
     addFilter: (field: FilterField) => void;
     updateFilter: (id: string, patch: Partial<FilterItem>) => void;
+    removeFilter: (id: string) => void;
 }
 const makeId = () =>
     `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 9)}`;
@@ -59,6 +60,17 @@ const useFilterStore = create<FilterStoreType>(set => ({
             };
         });
     },
+    removeFilter: (id) => {
+        set((state) => {
+            const { [id]: _, ...rest } = state.filtersById;
+            return {
+                ...state,
+                filterIds: state.filterIds.filter(fid => fid !== id),
+                filtersById: rest,
+                filters: state.filters.filter(filter => filter.id !== id)
+            };
+        });
+    }
 }))
 
 export default useFilterStore;
