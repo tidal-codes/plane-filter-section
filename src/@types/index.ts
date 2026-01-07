@@ -1,5 +1,7 @@
 // types.ts
 
+import type { ADD_FILTER_MENU } from "../constants/filter";
+
 export type Label = {
   id: string;          // id مچ با تسک‌ها
   name: string;        // اسم لیبل
@@ -33,3 +35,18 @@ export type Task = {
 };
 
 export type DisplayPropertiesType = "priority" | "labels" | "assignees";
+export interface SelectItem<T extends string> {
+  value: T;
+  label: string;
+  icon?: React.ReactNode;
+}
+
+export type FilterField = typeof ADD_FILTER_MENU[number]["value"];
+export type FilterOperator = "is" | "is_not" | "is_any_of" | "is_none_of" | "before" | "after" | "between";
+
+export interface FilterItem {
+  id: string
+  field: FilterField
+  operator: FilterOperator
+  value: string[] | null
+}
