@@ -31,3 +31,5 @@ export type Task = {
   assignees: string[]; // فقط id ممبرها
   projectId: string;
 };
+
+export type DisplayPropertiesType = "priority" | "labels" | "assignees";

@@ -58,7 +58,7 @@ export default function PopoverBase({ trigger, children, open, setOpen }: Popove
       <PopoverTrigger asChild>
         {trigger}
       </PopoverTrigger>
-      <PopoverContent className="w-80">
+      <PopoverContent className="w-fit">
         {children}
       </PopoverContent>
     </Popover>
