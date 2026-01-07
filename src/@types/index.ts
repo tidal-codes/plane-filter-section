@@ -1,6 +1,6 @@
 // types.ts
 
-import type { ADD_FILTER_MENU } from "../constants/filter";
+import type { ADD_FILTER_MENU, OPERATORS } from "../constants/filter";
 
 export type Label = {
   id: string;          // id مچ با تسک‌ها
@@ -42,7 +42,7 @@ export interface SelectItem<T extends string> {
 }
 
 export type FilterField = typeof ADD_FILTER_MENU[number]["value"];
-export type FilterOperator = "is" | "is_not" | "is_any_of" | "is_none_of" | "before" | "after" | "between";
+export type FilterOperator = typeof OPERATORS[keyof typeof OPERATORS]["value"];
 
 export interface FilterItem {
   id: string
