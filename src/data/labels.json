@@ -1,0 +1,44 @@
+[
+    {
+        "id": "label-1",
+        "name": "UI/UX",
+        "color": "#4F7FFF",
+        "description": "Tasks related to user interface improvements and design system updates."
+    },
+    {
+        "id": "label-2",
+        "name": "Frontend",
+        "color": "#FFB84D",
+        "description": "General frontend development work including components and responsive layout."
+    },
+    {
+        "id": "label-3",
+        "name": "Analytics",
+        "color": "#32C8A0",
+        "description": "Tasks related to analytics widgets, KPIs, and data visualizations."
+    },
+    {
+        "id": "label-4",
+        "name": "Performance",
+        "color": "#E04F4F",
+        "description": "Optimization tasks focused on rendering speed, bundle size, and loading times."
+    },
+    {
+        "id": "label-5",
+        "name": "Theming",
+        "color": "#A36BFF",
+        "description": "Work related to light/dark mode and theme token upgrades."
+    },
+    {
+        "id": "label-6",
+        "name": "Accessibility",
+        "color": "#55D4FF",
+        "description": "Accessibility fixes including keyboard navigation and ARIA support."
+    },
+    {
+        "id": "label-7",
+        "name": "Data Visualization",
+        "color": "#FF6F91",
+        "description": "Charts, heatmaps, zoom interactions, and visual data components."
+    }
+]

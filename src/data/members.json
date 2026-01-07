@@ -1,0 +1,23 @@
+[
+  {
+    "id": "user-12",
+    "name": "Arman Khatibi",
+    "email": "arman.khatibi@example.com",
+    "role": "Frontend Engineer",
+    "avatar": "https://i.pravatar.cc/40?img=12"
+  },
+  {
+    "id": "user-04",
+    "name": "Sara Nejad",
+    "email": "sara.nejad@example.com",
+    "role": "Product Designer",
+    "avatar": "https://i.pravatar.cc/40?img=4"
+  },
+  {
+    "id": "user-18",
+    "name": "Daniel Farhadi",
+    "email": "daniel.farhadi@example.com",
+    "role": "Full-Stack Developer",
+    "avatar": "https://i.pravatar.cc/40?img=18"
+  }
+]

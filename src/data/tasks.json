@@ -1,0 +1,308 @@
+[
+    {
+        "id": "TSK-101",
+        "title": "Revamp analytics overview widgets",
+        "description": "Redesign the analytics overview section on the dashboard to improve readability. Replace old chart components with new modular widgets and sync visual styles with the updated design system.",
+        "status": "in_progress",
+        "priority": "high",
+        "createdAt": "2026-01-06T09:30:00Z",
+        "updatedAt": "2026-01-06T12:45:00Z",
+        "labels": [
+            "label-1",
+            "label-3"
+        ],
+        "assignees": [
+            "user-12"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-102",
+        "title": "Implement responsive grid for dashboard layout",
+        "description": "Refactor the dashboard layout using a responsive grid system. Ensure widgets adapt cleanly on mobile and tablet breakpoints without breaking layout flow.",
+        "status": "todo",
+        "priority": "medium",
+        "createdAt": "2026-01-06T10:10:00Z",
+        "updatedAt": "2026-01-06T10:10:00Z",
+        "labels": [
+            "label-2"
+        ],
+        "assignees": [
+            "user-18"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-103",
+        "title": "Add global loading skeletons",
+        "description": "Introduce skeleton loading states for dashboard widgets. Use lightweight placeholders to decrease perceived loading time and align components with design tokens.",
+        "status": "in_progress",
+        "priority": "low",
+        "createdAt": "2026-01-05T14:22:00Z",
+        "updatedAt": "2026-01-06T08:00:00Z",
+        "labels": [],
+        "assignees": [
+            "user-12"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-104",
+        "title": "Create KPI card component",
+        "description": "Develop a reusable KPI card component that displays a metric, delta indicator, and trend sparkline. Component should support theming and dynamic data inputs.",
+        "status": "done",
+        "priority": "high",
+        "createdAt": "2026-01-03T09:14:00Z",
+        "updatedAt": "2026-01-04T11:38:00Z",
+        "labels": [
+            "label-1"
+        ],
+        "assignees": [
+            "user-12"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-105",
+        "title": "Integrate new analytics API",
+        "description": "Connect the dashboard widgets to the updated analytics API v2. Handle authentication, request batching, and error boundaries gracefully.",
+        "status": "in_review",
+        "priority": "high",
+        "createdAt": "2026-01-04T18:30:00Z",
+        "updatedAt": "2026-01-06T07:50:00Z",
+        "labels": [
+            "label-4"
+        ],
+        "assignees": [
+            "user-12"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-106",
+        "title": "Fix inconsistent timezone rendering",
+        "description": "Resolve issues where timestamps in the activity feed display incorrectly depending on the user’s locale and browser settings.",
+        "status": "todo",
+        "priority": "medium",
+        "createdAt": "2026-01-01T12:44:00Z",
+        "updatedAt": "2026-01-01T12:44:00Z",
+        "labels": [
+            "label-6"
+        ],
+        "assignees": [],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-107",
+        "title": "Overhaul theme system for dark mode",
+        "description": "Upgrade the theme engine to fully support dark mode. Adjust color tokens, shadows, and chart palettes to ensure accessibility and readability.",
+        "status": "in_progress",
+        "priority": "high",
+        "createdAt": "2026-01-02T10:00:00Z",
+        "updatedAt": "2026-01-06T11:10:00Z",
+        "labels": [
+            "label-1",
+            "label-5"
+        ],
+        "assignees": [
+            "user-04"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-108",
+        "title": "Add quick-filters above analytics widgets",
+        "description": "Implement date range and category quick-filters above the dashboard analytics widgets. Ensure state persists across navigation.",
+        "status": "todo",
+        "priority": "medium",
+        "createdAt": "2026-01-05T11:10:00Z",
+        "updatedAt": "2026-01-05T11:10:00Z",
+        "labels": [
+            "label-2"
+        ],
+        "assignees": [
+            "user-04"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-109",
+        "title": "Refactor charting library wrapper",
+        "description": "Clean up the internal wrapper around the charting library to reduce redundant prop transformations and improve performance.",
+        "status": "in_review",
+        "priority": "low",
+        "createdAt": "2026-01-02T08:40:00Z",
+        "updatedAt": "2026-01-04T19:00:00Z",
+        "labels": [],
+        "assignees": [
+            "user-18"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-110",
+        "title": "Optimize dashboard bundle size",
+        "description": "Identify heavy dependencies used in dashboard and replace them with lighter alternatives. Apply dynamic imports where applicable.",
+        "status": "todo",
+        "priority": "medium",
+        "createdAt": "2026-01-03T07:30:00Z",
+        "updatedAt": "2026-01-03T07:30:00Z",
+        "labels": [
+            "label-4"
+        ],
+        "assignees": [],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-111",
+        "title": "Introduce activity chart zooming",
+        "description": "Add pinch and scroll zoom interactions to the activity trend chart. Respect data boundaries and animate transitions smoothly.",
+        "status": "in_progress",
+        "priority": "medium",
+        "createdAt": "2026-01-05T09:12:00Z",
+        "updatedAt": "2026-01-06T08:15:00Z",
+        "labels": [
+            "label-7"
+        ],
+        "assignees": [
+            "user-18"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-112",
+        "title": "Build notification bell popover",
+        "description": "Create an interactive popover containing latest notifications fetched from the event stream. Include read-state indicators.",
+        "status": "todo",
+        "priority": "low",
+        "createdAt": "2026-01-01T15:40:00Z",
+        "updatedAt": "2026-01-01T15:40:00Z",
+        "labels": [],
+        "assignees": [
+            "user-04", "user-18"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-113",
+        "title": "Add audit trail logs",
+        "description": "Display user-triggered events and system actions in a scrollable log component. Support infinite scrolling and category filters.",
+        "status": "done",
+        "priority": "medium",
+        "createdAt": "2025-12-30T13:20:00Z",
+        "updatedAt": "2026-01-02T09:00:00Z",
+        "labels": [
+            "label-3"
+        ],
+        "assignees": [
+            "user-12"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-114",
+        "title": "Improve dashboard first-paint performance",
+        "description": "Reduce first-paint time by lowering blocking requests and preloading essential widget data. Investigate hydration bottlenecks.",
+        "status": "in_review",
+        "priority": "high",
+        "createdAt": "2026-01-04T10:40:00Z",
+        "updatedAt": "2026-01-05T13:14:00Z",
+        "labels": [
+            "label-4"
+        ],
+        "assignees": [
+            "user-18"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-115",
+        "title": "Add empty-state illustrations",
+        "description": "Design and integrate empty-state visuals for dashboard widgets when no data is available or filters return empty results.",
+        "status": "todo",
+        "priority": "low",
+        "createdAt": "2026-01-06T01:26:00Z",
+        "updatedAt": "2026-01-06T01:26:00Z",
+        "labels": [],
+        "assignees": [
+            "user-04"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-116",
+        "title": "Add keyboard navigation for widgets",
+        "description": "Support tab and arrow key navigation through dashboard widgets. Ensure ARIA roles and focus states are correctly applied.",
+        "status": "todo",
+        "priority": "medium",
+        "createdAt": "2026-01-02T16:00:00Z",
+        "updatedAt": "2026-01-02T16:00:00Z",
+        "labels": [
+            "label-6"
+        ],
+        "assignees": [],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-117",
+        "title": "Create team-activity heatmap",
+        "description": "Build a heatmap visualization showing daily team activity. Use color intensity to represent action volume across the month.",
+        "status": "in_progress",
+        "priority": "high",
+        "createdAt": "2026-01-05T10:44:00Z",
+        "updatedAt": "2026-01-06T10:01:00Z",
+        "labels": [
+            "label-7"
+        ],
+        "assignees": [
+            "user-18"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-118",
+        "title": "Implement quick-search for metrics",
+        "description": "Add a command-palette style search for dashboard metrics. Allow users to jump directly to a widget or KPI by typing its name.",
+        "status": "todo",
+        "priority": "medium",
+        "createdAt": "2026-01-06T04:31:00Z",
+        "updatedAt": "2026-01-06T04:31:00Z",
+        "labels": [
+            "label-3"
+        ],
+        "assignees": [
+            "user-12"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-119",
+        "title": "Migrate chart colors to new palette",
+        "description": "Update all chart instances to use the new unified color palette. Replace deprecated color tokens and update legend styles.",
+        "status": "done",
+        "priority": "low",
+        "createdAt": "2026-01-03T06:30:00Z",
+        "updatedAt": "2026-01-03T12:50:00Z",
+        "labels": [],
+        "assignees": [
+            "user-04"
+        ],
+        "projectId": "project-dashboard-redesign"
+    },
+    {
+        "id": "TSK-120",
+        "title": "Improve mobile gesture interactions",
+        "description": "Add smooth swipe interactions for switching between dashboard views on mobile. Optimize touch-event handling to reduce jank.",
+        "status": "in_review",
+        "priority": "high",
+        "createdAt": "2026-01-04T20:00:00Z",
+        "updatedAt": "2026-01-06T06:48:00Z",
+        "labels": [
+            "label-5"
+        ],
+        "assignees": [
+            "user-18"
+        ],
+        "projectId": "project-dashboard-redesign"
+    }
+]
