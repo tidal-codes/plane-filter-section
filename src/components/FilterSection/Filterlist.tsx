@@ -4,7 +4,7 @@ import FilterItem from '../FilterItem';
 const Filterlist = () => {
     const filterIds = useFilterStore(state => state.filterIds);
     return (
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center gap-2 flex-wrap'>
             {filterIds.map(id => {
                 return <FilterItem key={id} filterId={id} />
             })}

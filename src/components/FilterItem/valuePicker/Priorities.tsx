@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import SearchableSelect from '../../SearchableSelect';
-import { PRIORITY_LIST } from '../../../constants/priority'
+import { PRIORITY_LIST, PRIORITY_META } from '../../../constants/priority'
 import useFilterStore from '../../../store/filterStore';
 import { Button } from '../../ui/button';
 import type { TaskPriority } from '../../../@types';
@@ -13,6 +13,18 @@ interface PrioritiesProps {
 const Priorities = ({ id, value }: PrioritiesProps) => {
     const [open, setOpen] = useState(false);
     const updateFilter = useFilterStore(state => state.updateFilter);
+
+    function getLabelString() {
+        if (value.length === 0) return "--";
+        if (value.length === 1) return (
+            <span className='flex items-center gap-1'>
+                {PRIORITY_META[value[0] as TaskPriority].icon}
+                {PRIORITY_META[value[0] as TaskPriority].label}
+            </span>
+        )
+        return `${value.length} priorities`;
+    }
+
     return (
         <SearchableSelect<TaskPriority>
             open={open}
@@ -23,7 +35,7 @@ const Priorities = ({ id, value }: PrioritiesProps) => {
             multiple={true}
             trigger={
                 <Button>
-                    {value ? value.join(' , ') : "--"}
+                    {getLabelString()}
                 </Button>
             }
         />
