@@ -1,3 +1,4 @@
+import useDisplayStore from "../../store/displayStore";
 import AvatarBase from "../ui/avatar";
 import AssignedMemberAvatar from "./AssignedMemberAvatar";
 
@@ -5,6 +6,8 @@ interface TaskAssigneesProps {
     assignees: string[]
 }
 const TaskAssignees = ({ assignees }: TaskAssigneesProps) => {
+    const showAssignees = useDisplayStore(state => state.displayProperties.assignees);
+    if (!showAssignees) return null;
     return (
         <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
             {assignees.slice(0, 3).map(id => {
